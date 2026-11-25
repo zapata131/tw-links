@@ -1,0 +1,44 @@
+name: Check Links
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "twlinks/**/*.md"
+      - ".github/workflows/links.yml"
+  pull_request:
+    paths:
+      - "twlinks/**/*.md"
+      - ".github/workflows/links.yml"
+  schedule:
+    # Run once a month on the 1st at 09:00 UTC
+    - cron: "0 9 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Lychee Link Checker
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Exclude known bot-blocking domains that return 403 to automated CI requests
+          args: >-
+            --verbose
+            --no-progress
+            --scheme https
+            --scheme http
+            --accept 200,206,429
+            --exclude "merriam-webster\.com"
+            --exclude "academia\.edu"
+            'twlinks/**/*.md'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
