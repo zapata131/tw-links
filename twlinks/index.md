@@ -11,9 +11,9 @@ industry.
 
 ---
 
-## 🛠 Tools & Reference
+## {% include icon.html name="tools" %} Tools & Reference
 
-- [Doc Detective](https://doc-detective.com/): An open-source testing framework
+- [Doc Detective](https://docs.doc-detective.com/): An open-source testing framework
   for documentation. Lets you automatically verify that your UI steps, CLI
   commands, and API calls still match how the product actually behaves.
 - [Excalidraw](https://excalidraw.com/): A free, open-source virtual whiteboard
@@ -39,7 +39,7 @@ industry.
   enforce your style guide (like Google or Microsoft) automatically within your
   code editor.
 
-## ✨ Communities & Conferences
+## {% include icon.html name="communities" %} Communities & Conferences
 
 - [API the Docs](https://apithedocs.org/): An online conference focusing
   exclusively on API documentation.
@@ -52,7 +52,7 @@ industry.
   Berlin, Kenya, and Australia, and meetups across the globe. The page has some
   interesting resources and a wholesome Slack community.
 
-## ⚡️ Guides & Case Studies
+## {% include icon.html name="guides" %} Guides & Case Studies
 
 - [Ask me about API docs](https://askmeaboutapis.com/): A unique page written by
   Clarence William Cromwell that has a set of guides and essays, for both
@@ -78,11 +78,11 @@ industry.
   short, actionable checklist from the W3C covering headings, link text, alt
   text, and clear instructions. Easy to apply right away.
 
-## 📚 Books
+## {% include icon.html name="books" %} Books
 
 Books about technical writing:
 
-- [Docs as Tests](https://docsastests.com/): By Manny Silva, this book
+- [Docs as Tests](https://www.docsastests.com/): By Manny Silva, this book
   introduces a strategy for treating documentation like software tests so your
   examples and guides don't quietly go stale.
 - [Docs for Developers](https://www.amazon.com/Docs-Developers-Engineers-Technical-Writing-ebook/dp/B09HLZGWKT/):
@@ -121,7 +121,7 @@ Books about UX writing:
   By Torrey Podmajersky, this book is a good read if you are involved with UX
   writing or want to learn more about the subject.
 
-## 🎓 Courses
+## {% include icon.html name="courses" %} Courses
 
 - [Documenting APIs: A guide for technical writers and engineers](https://idratherbewriting.com/learnapidoc/):
   A course by Tom Johnson, the author of the I'd Rather be Writing blog. A
@@ -137,7 +137,7 @@ Books about UX writing:
   from the OpenAPI Initiative. A clear, structured reference for understanding
   and writing OpenAPI specifications.
 
-## 📝 Blogs
+## {% include icon.html name="blogs" %} Blogs
 
 - [Docs Like Code](https://www.docslikecode.com/): Anne Gentle's site and blog
   on docs-as-code practices, developer portals, and modern documentation
@@ -156,7 +156,7 @@ Books about UX writing:
   technical writing, plus the way she guides you through her thinking process
   make this blog an interesting read.
 
-## 🎙 Podcasts
+## {% include icon.html name="podcasts" %} Podcasts
 
 - [The Cherryleaf Podcast](https://www.cherryleaf.com/podcast/): Hosted by Ellis
   Pratt, featuring interviews and discussions about technical communication,
@@ -168,7 +168,7 @@ Books about UX writing:
   conversations with practitioners talking about documentation culture, tools,
   and lessons learned.
 
-## 🎥 Videos
+## {% include icon.html name="videos" %} Videos
 
 - [Beyond spell checking - what else can we check automatically?](https://www.youtube.com/watch?v=8NukYx5ggCM):
   By Tony Ibbs, interesting talk about automation. It has a DocOps approach to
@@ -177,15 +177,19 @@ Books about UX writing:
   By James Scott for Write the Docs Prague. Good for every writer.
 - [Minimum Viable Documentation for RESTful APIs](https://www.youtube.com/watch?v=E3YesNMUx1o):
   Talk by Mike Jang for API the Docs 2020.
-- [Proving and improving the value of your docs](https://www.youtube.com/watch?v=wH3H8ko43gM):
+- [Proving and improving the value of your docs](https://www.youtube.com/watch?v=4PuZV1j5M0E):
   By Tal Gluck for Write the Docs. A practical talk on choosing documentation
   metrics that actually matter to leadership and help improve doc quality.
 - [Treating Documentation like Code: a Practical Account](https://www.youtube.com/watch?v=Mzu-c-FoOdw):
   By Jodie Putrino for Write the Docs Portland 2017.
-- [What nobody tells you about documentation](https://www.youtube.com/watch?v=azh7gyMeccY):
+- [What nobody tells you about documentation](https://www.youtube.com/watch?v=p0PPtdRHG6M):
   By Daniele Procida for Write the Docs Prague 2017. The talk that introduced
   the Diátaxis framework—a must-watch for anyone thinking about how to structure
   docs.
+- [Write inclusive, people-first language about AI](https://www.youtube.com/watch?v=wH3H8ko43gM):
+  By Alexandra Klepper for Write the Docs. A talk on how to describe AI features
+  clearly and inclusively, without the hype. (Alexandra is my coworker, and she
+  is really nice.)
 - [Write the Docs YouTube Channel](https://www.youtube.com/@writethedocs):
   Hundreds of talks from Write the Docs conferences around the world, covering
   everything from Docs-as-Code to AI and content strategy.

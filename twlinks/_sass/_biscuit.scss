@@ -83,6 +83,16 @@ h2 {
   }
 }
 
+/* Inline SVG section icons (see _includes/icon.html) */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.3em;
+  vertical-align: -0.125em; /* fallback for browsers without the cap unit */
+  vertical-align: calc(0.5cap - 0.5em - 0.02em);
+}
+
 h3 {
   margin-top: 1.5rem;
   font-size: 1.1rem;
