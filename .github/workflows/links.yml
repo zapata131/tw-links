@@ -30,11 +30,14 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           # Exclude known bot-blocking domains that return 403 to automated CI requests
+          # Root-relative links (like /about.html) are checked against the live site.
+          # Uses http because the custom domain has no valid HTTPS certificate yet.
           args: >-
             --verbose
             --no-progress
             --scheme https
             --scheme http
+            --base-url http://technicalwriting.link
             --accept 200,206,429
             --exclude "merriam-webster\.com"
             --exclude "academia\.edu"
