@@ -2,8 +2,7 @@
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll.svg?color=red&label=Jekyll&logo=jekyll)][ruby-gems]
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
-[![FTP Deploy](https://img.shields.io/badge/FTP-Deploy-blue?logo=github-actions&logoColor=white)](https://github.com/SamKirkland/FTP-Deploy-Action)
-[![Deploy to FTP](https://github.com/zapata131/TW-links/actions/workflows/deploy.yml/badge.svg)](https://github.com/zapata131/TW-links/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/zapata131/tw-links/actions/workflows/deploy.yml/badge.svg)](https://github.com/zapata131/tw-links/actions/workflows/deploy.yml)
 
 A curated collection of essential resources for Technical Writers. Visit the live site at [technicalwriting.link][tw-link].
 
@@ -11,7 +10,7 @@ A curated collection of essential resources for Technical Writers. Visit the liv
 
 ## 🚀 Overview
 
-This repository contains the source code for [Technical Writing Links](https://technicalwriting.link), a simple and useful landing page for documentation professionals. Built with **Jekyll** and the **Biscuit** theme, it is automatically deployed to personal hosting via GitHub Actions.
+This repository contains the source code for [Technical Writing Links](https://technicalwriting.link), a simple and useful landing page for documentation professionals. Built with **Jekyll** and the **Biscuit** theme, it is automatically deployed to **GitHub Pages** via GitHub Actions.
 
 ## 📂 Project Structure
 
@@ -24,8 +23,7 @@ This repository contains the source code for [Technical Writing Links](https://t
 │   ├── _includes/          # HTML partials (head, scripts, etc.)
 │   ├── _sass/              # SCSS source files
 │   └── css/                # Compiled CSS
-├── .github/workflows/      # CI/CD deployment logic
-└── deploy.sh               # Local deployment utility
+└── .github/workflows/      # CI/CD deployment logic (GitHub Pages)
 ```
 
 ---
@@ -105,13 +103,10 @@ We welcome contributions! To maintain a high standard of quality, please follow 
 ## 🚢 Deployment
 
 ### Automated (Recommended)
-Pushes to the `main` branch trigger a GitHub Action that automatically builds and deploys the site to the FTP server.
+Pushes to the `main` branch (when files in `twlinks/` or `.github/workflows/deploy.yml` change) automatically trigger the GitHub Actions workflow to build and deploy the site to GitHub Pages.
 
 ### Manual
-Use the provided `deploy.sh` script for emergency or manual uploads:
-```bash
-./deploy.sh
-```
+You can also trigger a deployment manually from the **Actions** tab in GitHub using the **Deploy to GitHub Pages** workflow (`workflow_dispatch`).
 
 ---
 

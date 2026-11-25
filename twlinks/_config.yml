@@ -3,7 +3,7 @@ title: Technical Writing Links
 tag_text: Technical Writing Links
 description: A simple page with useful resources for Technical Writers.
 # baseurl: "/blog" # the subpath of your site, e.g. /blog
-# url: "https://example.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://technicalwriting.link" # the base hostname & protocol for your site
 
 plugins:
   - jekyll-seo-tag
