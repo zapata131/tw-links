@@ -105,7 +105,8 @@ bundle exec jekyll build
 All the resources live in `twlinks/index.md`. To add one:
 
 1. Find the section where the resource belongs.
-2. Add an entry in alphabetical order, using this format:
+2. Place the entry where it fits the section's progression (for example, from
+   foundational to advanced, or from general to specialized), using this format:
 
    ```markdown
    - [Name of the resource](https://example.com/): A short description of
@@ -122,11 +123,12 @@ The icons come from [Lucide](https://lucide.dev) (ISC license) and are defined
 in `twlinks/_includes/icon.html`. A heading looks like this:
 
 ```markdown
-## {% include icon.html name="tools" %} Tools & Reference
+## {% include icon.html name="guides" %} Guides & Case Studies {#guides}
 ```
 
-The available names are `tools`, `communities`, `guides`, `books`, `courses`,
-`blogs`, `podcasts`, and `videos`.
+The available names are `guides`, `tools`, `courses`, `books`, `blogs`,
+`podcasts`, `videos`, and `communities`. Keep an explicit `{#id}` anchor on
+each heading so the top jump-link bar stays linked properly.
 
 To add an icon for a new section, copy the shapes from the Lucide icon's SVG
 into a new `when` branch in the `icon.html` file. Keep each branch on a single
@@ -174,7 +176,8 @@ Contributions are welcome! To keep the quality high, follow these guidelines.
 
 ### Quality checks
 
-- Add new links in alphabetical order within their sections.
+- Place new links in a logical spot within their section (for example, from
+  foundational to advanced).
 - Test your changes locally with `bundle exec jekyll serve` before you push.
 - Make sure the **Check Links** workflow passes on your pull request.
 
