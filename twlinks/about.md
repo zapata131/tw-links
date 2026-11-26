@@ -22,6 +22,8 @@ suggesting stuff I've found interesting and helpful. If you want me to take a
 look at a specific resource, [send an email][zapata-landing] and I'll check it
 out.
 
+[← Back to the links](/)
+
 [zapata-landing]: https://zapata131.com
 [bufferbuffer]: https://bufferbuffer.com
 [tw-links-repo]: https://github.com/zapata131/TW-links
