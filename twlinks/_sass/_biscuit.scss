@@ -73,6 +73,7 @@ h2 {
   margin-top: 2rem;
   font-size: 1.2rem;
   margin-bottom: 0.75rem;
+  scroll-margin-top: 1.5rem;
 }
 
 @media (min-width: 30rem) {
@@ -113,6 +114,44 @@ p, ul, ol, dl, table, pre, blockquote {
 
 ul, ol {
   padding-left: 1.5rem;
+}
+
+ul li + li, ol li + li {
+  margin-top: 0.5rem;
+}
+
+.section-nav {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.section-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.9rem;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.section-nav li + li {
+  margin-top: 0;
+}
+
+.section-nav a {
+  display: inline-block;
+  padding: 0.15rem 0;
+}
+
+@media (pointer: coarse) {
+  .section-nav ul {
+    gap: 0.35rem 1rem;
+  }
+
+  .section-nav a {
+    min-block-size: 24px;
+    padding: 0.3rem 0.1rem;
+  }
 }
 
 dd {
